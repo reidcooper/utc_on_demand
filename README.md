@@ -1,8 +1,6 @@
 # UtcOnDemand
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/utc_on_demand`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Display your machine's current time (in your timezone) and in UTC.
 
 ## Installation
 
@@ -22,7 +20,27 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Installing the gem will place the executable `utc`. Calling `utc` from the command line will return:
+
+    $ utc
+    EST: 2018-01-17 19:39:50 -0500
+    UTC: 2018-01-18 00:39:50 UTC
+
+Where, the first line returns your current system's time (in the configured timezone). The second line displays your current system time in UTC.
+
+If you would like to convert a specific time to UTC, please add a argument to `utc`.
+
+    $ utc 1:35pm
+    EST: 2018-01-17 13:35:00 -0500
+    UTC: 2018-01-17 18:35:00 UTC
+
+It can also take a string argument and parse it. This implements ruby's built in `Time` library's `#parse` function.
+
+    $ utc "2017/12/25 11:00am"
+    EST: 2017-12-25 11:00:00 -0500
+    UTC: 2017-12-25 16:00:00 UTC
+
+Enjoy!
 
 ## Development
 

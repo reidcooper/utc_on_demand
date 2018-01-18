@@ -7,7 +7,7 @@ module UtcOnDemand
       time = Time.now
 
       if override_timestamp
-        time = override_timestamp
+        time = Time.parse(override_timestamp)
       end
 
       puts "#{time.zone}: #{time}"

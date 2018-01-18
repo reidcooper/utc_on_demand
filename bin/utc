@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'utc_on_demand'
+
+UtcOnDemand::Presenter.display(ARGV[0])

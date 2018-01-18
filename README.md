@@ -32,7 +32,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/utc_on_demand.
+Bug reports and pull requests are welcome on GitHub at https://github.com/reidcooper/utc_on_demand.
 
 ## License
 

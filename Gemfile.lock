@@ -1,0 +1,20 @@
+PATH
+  remote: .
+  specs:
+    utc_on_demand (0.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rake (10.1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 1.16)
+  rake (~> 10.0)
+  utc_on_demand!
+
+BUNDLED WITH
+   1.16.0
